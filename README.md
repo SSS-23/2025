@@ -1,7 +1,7 @@
 # 2025
 
 ## Step 1: Build the updated site
-Run this from the root of your project
+### Run this from the root of your project
 npm run build
 
 ## Step 2: Deploy the new build to GitHub Pages
