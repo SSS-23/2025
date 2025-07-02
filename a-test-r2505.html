@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ <!-- Favicon icon-->
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png?v=2">
+<link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/images/favicon/block-safari-pinned-tab.svg" color="#8b3dff">
+<link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#8b3dff">
+<meta name="msapplication-config" content="./assets/images/favicon/tile.xml">
+
+<!-- Color modes -->
+<script src="./assets/js/vendors/color-modes.js"></script>
+
+<!-- Libs CSS -->
+<link href="./assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+<link href="./assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<!-- Scroll Cue -->
+<link rel="stylesheet" href="./assets/libs/scrollcue/scrollCue.css">
+
+<!-- Box icons -->
+<link rel="stylesheet" href="./assets/fonts/css/boxicons.min.css">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="./assets/css/theme.min.css">
+      <title>How Base-Layer Profits Reshape On-Chain Finance
+      </title>
+   </head>
+
+
+<body class="bg-white">
+  <main>
+   <!-- Navbar -->
+<header>
+   <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <div class="container px-3">
+         <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo/logo.svg" alt /></a>
+         <button class="navbar-toggler offcanvas-nav-btn" type="button">
+            <i class="bi bi-list"></i>
+         </button>
+         <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+            <div class="offcanvas-header">
+               <a href="./index.html" class="text-inverse"><img src="./assets/images/logo/logo.svg" alt /></a>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body pt-0 align-items-center">
+               <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./people-structure.html" id="peopleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      People
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="peopleDropdown">
+                      <li><a class="dropdown-item" href="./people-structure.html">Governance</a></li>
+                      <li><a class="dropdown-item" href="./people-council.html">Council</a></li>
+                      <li><a class="dropdown-item" href="./people-committee.html">Committee</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="peopleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Three Initiatives
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="peopleDropdown">
+                      <li><a class="dropdown-item" href="./dreammaker.html">1-Dream Maker</a></li>
+                      <li><a class="dropdown-item" href="./futuredecoder.html">2-Future Decoder </a></li>
+                      <li><a class="dropdown-item" href="./signalcatcher.html">3-Signal Catcher</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./events.html">Events & Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./research.html">Our Research</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>        
+               </ul>
+               
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+
+  <div class="container-fluid px-4 px-lg-5 py-4" style="max-width: 1400px;">
+    <div class="row">
+      
+      <!-- TOC -->
+<nav id="toc-wrapper" class="col-lg-3 d-none d-lg-block order-lg-1" style="top: 6rem; position: sticky;">
+  <div style="padding-left: 1rem; margin-bottom: 1.2rem;">
+    <h5 style="
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #a6a6a6;
+      margin: 0;
+      margin-top: 0.75rem;
+    ">
+      Content
+    </h5>
+    <div style="
+      width: 3rem;
+      height: 6px;
+      background-color: #a6a6a6;
+      border-radius: 1px;
+      margin-top: 0.25rem;
+    "></div>
+  </div>
+
+  <ul class="nav flex-column" id="toc">
+  <li class="nav-item">
+    <a class="nav-link" href="#s1">1. How Much “Base-Layer Profit” Can Advanced Validators Really Add?</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="#s2">2. How Validator Alpha Flows Into On-chain Products</a>
+    <ul class="nav flex-column ms-3">
+      <li class="nav-item"><a class="nav-link" href="#s2-1">Type 1: Liquid-Staking Tokens</a></li>
+      <li class="nav-item"><a class="nav-link" href="#s2-2">Type 2: Restaking & AVS Yield-Tokens</a></li>
+      <li class="nav-item"><a class="nav-link" href="#s2-3">Type 3: MEV-Shield Vaults</a></li>
+      <li class="nav-item"><a class="nav-link" href="#s2-4">Type 4: Decentralized Blockspace Arbitrage</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="#s3">3. Closing Thought</a>
+    
+  </li>
+</ul>
+
+</nav>
+
+
+      <!-- Main -->
+      <div class="col-lg-9 order-lg-2 px-5 px-xl-7">
+        <h1 class="font-oswald fw-bold">
+          How Base-Layer Profits Reshape On-Chain Finance
+        </h1>
+
+        <!-- Meta line -->
+        <div class="meta-line">
+        <div class="d-flex align-items-center me-3">
+          <i class="bi bi-calendar me-2" style="color: #444;"></i>
+          <span>Jun 16, 2025</span>
+        </div>
+        <a href="https://www.linkedin.com/in/will-lu-2a2381" class="d-flex align-items-center text-decoration-none">
+          <i class="bi bi-person me-2" style="color: #444;"></i>
+          <div class="position-relative d-inline-block">
+            <span class="author-name" style="color: #444;">Will Lu, </span>
+            <i class="bi bi-linkedin position-absolute" style="top: -0.4em; right: -1.2em; color: #0077b5; font-size: 0.85em;"></i>
+            
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/freya-tan-sg" class="d-flex align-items-center text-decoration-none" style="margin-left: 0.75rem;">
+          
+          <div class="position-relative d-inline-block">
+            <span class="author-name" style="color: #444;">Freya Tan</span>
+            <i class="bi bi-linkedin position-absolute" style="top: -0.4em; right: -1.2em; color: #0077b5; font-size: 0.85em;"></i>
+            
+          </div>
+        </a>
+        
+        
+      </div>
+
+
+        <!-- Banner -->
+        <img src="./assets/images/04-research/banner-sc.svg" class="img-fluid rounded mb-4" style="object-fit: cover;" alt="Banner">
+
+        <!-- Intro -->
+        <p class="fst-italic" style="font-family: 'Merriweather', serif; color: #000000; font-size: 1rem;">
+          In traditional finance, the plumbing—central banks and clearinghouses—earns little, leaving most profits to be made higher up the stack. On-chain, by contrast, validators have turned the base layer into an alpha engine, extracting yield from optimized issuance, tips, and MEV. 
+        </p>
+        <p class="fst-italic" style="font-family: 'Merriweather', serif; color: #000000; font-size: 1rem;">
+          This article maps how that validator income flows outward and is repackaged into the staking tokens, restaking claims, and structured notes that reach everyday users.
+        </p>
+        
+        <!-- Key Insights -->
+        <div class="key-insights mb-6">
+          <h5>Key Points</h5>
+          <ul>
+            <li>
+              Validator alpha (from issuance, tips, MEV) now flows downstream into LSTs, restaking tokens, execution-optimised vaults, and even programmable blockspace arbitrage strategies.
+            </li>
+            <li>
+              <strong>Staking protocols</strong> embed base-layer returns—issuance, tips, and MEV bribes—directly into rebasing token balances. 
+              Meanwhile, Through <strong>restaking frameworks</strong> like EigenLayer and Karak, users can redeploy LSTs to secure additional services (AVSs), especially MEV-linked services such as sequencing or block auctioning, which can further extend base-layer monetisation.
+            </li>  
+            <li>
+              MEV-shield vaults and structured blockspace deals both apply base-layer optimisation tools (private pools, batch auctions, solver competition, sequencing tweaks) to turn validator edge into user yield.  
+            </li>  
+          </ul>
+      
+        </div>
+
+        
+
+        <!-- Content -->
+        <!-- Section 1 -->
+        <div>
+          <h2 id="s1" class="rh1">Section 1 - How Much “Base-Layer Profit” Can Advanced Validators Really Add?</h2>
+          
+          <p class="rp">
+            The plain-vanilla validator earns ≈ 3.5 % APR (issuance + average tips). 
+          </p>
+          <p class="rp">
+            Fine-tuned operators push that above 6 % by combining availability engineering, mempool science and MEV routing.
+          </p>
+
+<table style="border-collapse: collapse; width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333; font-size: 0.95rem;">
+  <thead>
+    <tr style="border-bottom: 2px solid #666;">
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Validator lever</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Core playbook (condensed)</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Typical uplift*</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>Relay-level auctions (MEV-Boost+)</strong></td>
+      <td class="rp" style="padding: 8px;">Replace external relay with in-AVS partial block auction; validator earns relay service fees</td>
+      <td class="rp" style="padding: 8px;">+0.1–0.2 pp (via trusted execution)</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>Cross-domain sequencing</strong></td>
+      <td class="rp" style="padding: 8px;">Act as shared L2 sequencer (e.g., Astria, Espresso); capture L2 MEV and ordering value</td>
+      <td class="rp" style="padding: 8px;">+0.3–0.5 pp (depending on L2 tx flow)</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>MEV Oracle services</strong></td>
+      <td class="rp" style="padding: 8px;">Report cross-chain arbitrage routes to bots; monetize latency and signal accuracy</td>
+      <td class="rp" style="padding: 8px;">+0.1–0.3 pp (based on oracle scope)</td>
+    </tr>
+  </tbody>
+</table>
+
+          
+        </div>
+        
+        <!-- Section 2 -->
+        <div>
+          <h2 id="s2" class="rh1">
+            Section 2 - How Validator Alpha Flows Into On-chain Products
+          </h2>
+          <!-- 2.1 Liquid-Staking Tokens -->
+          <div class="mt-5">
+            <h3 id="s2-1" class="rh2 mt-2">
+  Type&nbsp;1: Liquid-Staking Tokens (stETH, rETH, osETH, sETH2…)
+</h3>
+
+
+  <span class="badge badge-label mt-3">How a user invests</span>
+
+            <p class="rp">
+              Deposit ETH into a protocol such as <strong>Lido</strong> or <strong>Rocket&nbsp;Pool</strong>; receive a liquid-staking token (e.g.&nbsp;stETH or rETH) that remains tradable while it accrues staking rewards.
+</p>
+
+
+  <span class="badge badge-label">How base-layer yield is packaged</span>
+
+<p class="rp">
+  The LST’s return equals the sum of three validator levers—uptime, priority-tip capture, and MEV bribes—enforced by protocol rules. Every extra gwei earned upstream is automatically rebased into the token balance downstream.
+</p>
+
+<table style="border-collapse: collapse; width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333; font-size: 0.95rem;">
+  <thead>
+    <tr style="border-bottom: 2px solid #666;">
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Validator lever</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Current implementation&nbsp;(2025&nbsp;Q2)</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>How the yield reaches LST holders</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>Uptime</strong></td>
+      <td class="rp" style="padding: 8px;">All LST protocols enforce &ge; 99.9 % SLA; Lido &amp; Stakewise track missed slots with multi-cloud probes</td>
+      <td class="rp" style="padding: 8px;">Fewer missed slots ⇒ more protocol issuance ⇒ higher daily rebases on stETH / rETH</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>Priority tips</strong></td>
+      <td class="rp" style="padding: 8px;">Rocket Pool <em>Smoothing Pool</em> auto-pools proposer tips; Lido’s <em>Block Proposer Policy v2</em> mandates MEV-Boost with tip-first fallback</td>
+      <td class="rp" style="padding: 8px;">Tips are aggregated with issuance &amp; MEV and credited per block—holders need take no action</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>MEV bribes</strong></td>
+      <td class="rp" style="padding: 8px;">Lido, Stakewise, Frax Ether require multi-relay MEV-Boost with whitelisted relays; Rocket Pool only recommends it, so rETH captures slightly less MEV</td>
+      <td class="rp" style="padding: 8px;">Builder bids reach the fee-recipient, then flow into the LST contract; holders passively receive the full bribe income</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="rp mt-3">
+  <strong>Payout</strong> — Token balances rebase (or exchange rates rise) daily.  
+  Sell or redeem anytime: base-layer optimisation is already bundled into your return.
+</p>
+<p class="rp">
+             <br>.
+          </p>
+          </div>
+
+          <!-- 2.2 Restaking & AVS Yield Tokens -->
+          <div class="mt-5">
+          <h3 id="s2-2" class="rh2 mt-4">
+  Type&nbsp;2: Restaking &amp; AVS Yield-Tokens (eETH, rsETH, Karak Points)
+</h3>
+
+
+  <span class="badge badge-label mt-3">How a user invests</span>
+          <p class="rp">
+  Restake an LST (or a direct 32 ETH validator key) into <strong>EigenLayer</strong>, <strong>Karak</strong>, or similar frameworks and receive a receipt token such as eETH-LP or rsETH-LP, plus non-transferable AVS points.
+</p>
+
+
+  <span class="badge badge-label">Live MEV-linked tasks (2025)</span>
+          <p class="rp">
+  Restaked validators can opt into additional “Actively Validated Services” (AVSs) that monetise block auctions, L2 sequencing, or cross-chain price feeds—all without changing Ethereum’s base consensus.
+</p>
+
+<table style="border-collapse: collapse; width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333; font-size: 0.95rem;">
+  <thead>
+    <tr style="border-bottom: 2px solid #666;">
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Live AVS</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>MEV relationship</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Alters L1 block flow?</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>MEV-Boost+ Relay Set</strong> (EigenLayer pilot)</td>
+      <td class="rp" style="padding: 8px;">Restaked validators run partial-block auctions, replacing traditional relays and earning service fees</td>
+      <td class="rp" style="padding: 8px;">❌ No – only the relay service moves into AVS</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>Shared-Sequencer Networks</strong> (Astria, Espresso)</td>
+      <td class="rp" style="padding: 8px;">Validators become L2 sequencers, capturing cross-domain MEV and L2 tips</td>
+      <td class="rp" style="padding: 8px;">❌ No – adds an L2 ordering layer, L1 PBS unchanged</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>Cross-Domain MEV Oracle</strong> (research)</td>
+      <td class="rp" style="padding: 8px;">Reports inter-chain price gaps for arbitrage bots</td>
+      <td class="rp" style="padding: 8px;">❌ No – only runs a light-client price script</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  <span class="badge badge-label mt-3">How the product earns</span>
+          <p class="rp">
+  Holders receive the <strong>base staking yield</strong> (issuance + tips + MEV) inherited from the underlying LST, plus <strong>AVS service fees or airdrops</strong> worth roughly 0.4–1.0 % extra APY at current market prices.
+</p>
+
+
+  <span class="badge badge-label ">How the user gets paid</span>
+          <p class="rp">
+  Restaking tokens rebase daily like LSTs and periodically drop AVS tokens. Users can sell the LP token on a DEX or hold for airdrop unlocks—no validator management required.
+</p>
+            <p class="rp">
+             <br>.
+          </p>
+            </div>
+
+          <!-- 2.3 MEV-Shield Vaults -->
+          <div class="my-3">
+  <h3 id="s2-3" class="rh2 mt-4">
+  Type&nbsp;3: Execution-Optimised “MEV-Shield” Vaults
+</h3>
+
+
+  <span class="badge badge-label">How a user invests</span>
+            <p class="rp">
+  Deposit idle ETH or stablecoins into a vault that executes swaps or liquidity-provision on your behalf.  
+  Unlike standard vaults, these variants embed an <strong>MEV-shield</strong> layer that defends each trade from frontrunning and sandwich attacks, turning avoided losses into extra yield.
+</p>
+
+
+  <span class="badge badge-label">How the MEV-shield works</span>
+            <p class="rp">
+  Three complementary techniques can be plugged into a vault. Each one blocks, neutralises, or redirects MEV so that value flows back to depositors instead of bots.
+</p>
+<div style="overflow-x:auto; width:100%;">
+<table style="border-collapse: collapse; width: 100%; border-top: 2px solid #333; border-bottom: 2px solid #333; font-size: 0.95rem;">
+  <thead>
+    <tr style="border-bottom: 2px solid #666;">
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Mechanism Type</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Specific Technique</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>How It Works</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>MEV Defense Logic</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Representative Projects</strong></th>
+      <th class="rp" style="text-align: left; padding: 8px;"><strong>Why It Fits Vaults</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>① Information Obfuscation</strong></td>
+      <td class="rp" style="padding: 8px;"><strong>Private Mempools</strong></td>
+      <td class="rp" style="padding: 8px;">Route txs directly to trusted builders via custom RPC</td>
+      <td class="rp" style="padding: 8px;">Bots cannot preview or frontrun the order</td>
+      <td class="rp" style="padding: 8px;">Flashbots Protect, MEVBlocker, Eden</td>
+      <td class="rp" style="padding: 8px;">Simple to bolt on; secures swaps, redemptions, re-balances</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"></td>
+      <td class="rp" style="padding: 8px;"><strong>Commit-Reveal / Threshold Encryption</strong></td>
+      <td class="rp" style="padding: 8px;">Submit tx hash or encrypted payload; reveal at execution</td>
+      <td class="rp" style="padding: 8px;">Details stay hidden until finalised</td>
+      <td class="rp" style="padding: 8px;">Osmosis, Anoma, FHE rollups</td>
+      <td class="rp" style="padding: 8px;">Best for high-frequency or privacy-sensitive strategies</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>② Price Formation Optimisation</strong></td>
+      <td class="rp" style="padding: 8px;"><strong>Frequent Batch Auctions (FBA)</strong></td>
+      <td class="rp" style="padding: 8px;">Collect intents in a window; settle at single clearing price</td>
+      <td class="rp" style="padding: 8px;">Uniform price removes time-based insertion edge</td>
+      <td class="rp" style="padding: 8px;">CoW Protocol, Gnosis Auction, MorphoBlue</td>
+      <td class="rp" style="padding: 8px;">Vault aggregates trade intents, slippage drops, surplus rises</td>
+    </tr>
+    <tr>
+      <td class="rp" style="padding: 8px;"><strong>③ Incentive Inversion</strong></td>
+      <td class="rp" style="padding: 8px;"><strong>Intent + Solver Competition</strong></td>
+      <td class="rp" style="padding: 8px;">Solvers race to execute user intents and return surplus</td>
+      <td class="rp" style="padding: 8px;">Turns MEV from cost into rebate</td>
+      <td class="rp" style="padding: 8px;">CoW Protocol, UniswapX, Anoma</td>
+      <td class="rp" style="padding: 8px;">Vault acts as intent agent, surplus boosts NAV</td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+
+  <span class="badge badge-label mt-3">How the user gets paid</span>
+            <p class="rp">
+
+  Withdraw anytime to reclaim principal plus accumulated surplus—either as a higher same-asset balance or via automatic compounding inside the vault.
+</p>
+            <p class="rp">
+             <br>.
+          </p>
+          </div>
+          
+        <!-- 2.4 Decentralised Blockspace Auctions -->
+        <div>
+          <h3 id="s2-4" class="rh2">
+  Type 4: Decentralized Blockspace-Market Structured-Arbitrage Product
+</h3>
+
+<p class="rp">
+  <strong>Such product is standardising base-layer optimisation</strong>—cross-domain MEV capture, relay auctions, and private preference expression—into a retail-friendly trading stack. But for now, it is still a sub-product embedded in transaction.
+</p>
+
+<span class="badge badge-label mb-3">How a user invests</span>
+<p class="rp">
+  1. <strong>Submit an “Intent + Payoff Map”.</strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;Example: “Swap 100 ETH → USDC; if ≥ $50 MEV is captured, refund $20 to me, the rest may be kept by the executor.”<br>
+  2. <strong>Lock a small amount of ETH</strong> for gas / bidding collateral.
+</p>
+
+<span class="badge badge-label mt-3 mb-2">How it works</span>
+<ol class="rp">
+  <li><strong>Encrypted preference auction:</strong> Platform publishes the user’s encrypted intent to a public order book.<br>
+  </li>
+  <li><strong>Searcher bidding:</strong> MEV searchers build bundles that execute the trade <em>and</em> harvest MEV; each bundle promises to meet the user’s refund rule.<br>
+  </li>
+  <li><strong>Builder aggregation:</strong> Builders pick the most profitable bundle set and attach a tip; the proposer includes the block.<br>
+  </li>
+  <li><strong>On-chain settlement:</strong> A contract automatically splits the captured MEV/tip—e.g., $20 back to the user, surplus to the searcher—exactly as the payoff map dictates.
+  </li>
+</ol>
+
+<span class="badge badge-label mt-3 mb-1">How the user gets paid</span>
+<p class="rp">
+  Immediate, on-chain distribution of the programmed refund / subsidy once the block finalizes. 
+</p>
+
+<span class="badge badge-label mt-3">Why this is a <em>structured</em> arbitrage product</span>
+
+<div class="my-3" style="overflow-x:auto;">
+  <table style="border-collapse: collapse; min-width: 720px; border-top: 2px solid #333; border-bottom: 2px solid #333; font-size: 0.95rem;">
+    <thead>
+      <tr style="border-bottom: 2px solid #666;">
+        <th class="rp" style="text-align: left; padding: 8px;"><strong>Classic trait</strong></th>
+        <th class="rp" style="text-align: left; padding: 8px;"><strong>Blockspace-Market Structured-Arbitrage Product</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="rp" style="padding: 8px;">Uses an arbitrage spread as the return source</td>
+        <td class="rp" style="padding: 8px;">Cross-domain MEV + builder tips</td>
+      </tr>
+      <tr>
+        <td class="rp" style="padding: 8px;">User pre-defines conditional payouts</td>
+        <td class="rp" style="padding: 8px;">Payoff map (e.g., “refund $x if MEV ≥ y”)</td>
+      </tr>
+      <tr>
+        <td class="rp" style="padding: 8px;">Execution outsourced to a specialist</td>
+        <td class="rp" style="padding: 8px;">MEV searchers & builders compete for the order</td>
+      </tr>
+      <tr>
+        <td class="rp" style="padding: 8px;">Automated, rules-based settlement</td>
+        <td class="rp" style="padding: 8px;">Smart contract enforces the split on-chain</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p class="rp">
+  On top of this stack, <em>any</em> programmable arbitrage or hedging structure can be defined, <strong>turning base-layer profit flows directly into custom DeFi products</strong>, without the user ever managing the execution details themselves.
+</p>
+
+        </div>
+        
+        
+        </div>
+
+        <!-- Section 3 -->
+        <div>
+          <h2 id="s3" class="rh1">Closing Thought
+          </h2>
+          
+          <p class="rp">
+            <strong>1. Base-layer optimisation is becoming foundational to DeFi products.</strong>
+            </p>
+          <p class="rp">
+            As product-level competition becomes saturated, marginal gains are now increasingly sourced from the base layer.
+          </p>
+          <p class="rp">
+            In fact, the base layer remains the most essential—and least replaceable—component of decentralized finance: it replaces institutional trust with open consensus and incentive alignment, forming the foundation beneath staking, restaking, and all asset-layer activity.
+          </p>
+          <p class="rp">
+            The base layer itself is rapidly evolving. By early 2025, over 70% of Ethereum validators had adopted MEV-Boost, and elevated APRs are now treated as the new baseline. The next frontier of competition is shifting toward cross-domain MEV capture and localized block auctions.
+          </p>
+          <p class="rp">
+            In this environment, capturing base-layer yield requires using the most advanced tooling to extract increasingly elusive gains. While base-layer optimisation may not emerge as a standalone financial product in the near term, it is quickly becoming a structural ingredient embedded into every serious on-chain system.
+          </p>
+
+          
+          <p class="rp">
+            <strong>2. Neutrality and fairness are necessary constraints on advanced optimisation.</strong>
+          </p>
+          <p class="rp">
+            That said, performance must be grounded in neutrality. Base-layer optimisation can only scale if it preserves the shared nature of blockspace. Yield-enhancing techniques must align with fair ordering and transparent execution. Otherwise, validator strategies risk degrading market integrity, turning short-term alpha into long-term extraction. Each ecosystem must make principled choices: which optimisations to allow, which to reject, and how to balance fairness with legitimate innovation.
+          </p>
+
+          <p class="rp">
+            <strong>3. Execution precision will define the next phase of DeFi scalability.</strong>
+          </p>
+
+          <p class="rp">
+            Finally, as DeFi scales into RWAs and high-volume derivatives, the execution layer will matter more than ever. When basis points move millions, the structure of an order—and the platform’s ability to express user intent—becomes critical. Intent-based architectures, programmable execution, and decentralised blockspace markets are not abstract design goals; they are becoming operational necessities. The base layer is no longer just a settlement engine—it is an active yield source and a programmable market infrastructure.
+          </p>
+
+         </div>
+
+
+
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC active highlight -->
+  <script>
+    const tocLinks = document.querySelectorAll('#toc a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      document.querySelectorAll('h2, h3').forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

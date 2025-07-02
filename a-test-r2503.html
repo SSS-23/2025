@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ <!-- Favicon icon-->
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png?v=2">
+<link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/images/favicon/block-safari-pinned-tab.svg" color="#8b3dff">
+<link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#8b3dff">
+<meta name="msapplication-config" content="./assets/images/favicon/tile.xml">
+
+<!-- Color modes -->
+<script src="./assets/js/vendors/color-modes.js"></script>
+
+<!-- Libs CSS -->
+<link href="./assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+<link href="./assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<!-- Scroll Cue -->
+<link rel="stylesheet" href="./assets/libs/scrollcue/scrollCue.css">
+
+<!-- Box icons -->
+<link rel="stylesheet" href="./assets/fonts/css/boxicons.min.css">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="./assets/css/theme.min.css">
+      <title>Understanding the Economic Layer of PoS: What Really Powers Staking Returns?</title>
+   </head>
+
+
+<body class="bg-white">
+  <main>
+   <!-- Navbar -->
+<header>
+   <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <div class="container px-3">
+         <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo/logo.svg" alt /></a>
+         <button class="navbar-toggler offcanvas-nav-btn" type="button">
+            <i class="bi bi-list"></i>
+         </button>
+         <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+            <div class="offcanvas-header">
+               <a href="./index.html" class="text-inverse"><img src="./assets/images/logo/logo.svg" alt /></a>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body pt-0 align-items-center">
+               <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./people-structure.html" id="peopleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      People
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="peopleDropdown">
+                      <li><a class="dropdown-item" href="./people-structure.html">Governance</a></li>
+                      <li><a class="dropdown-item" href="./people-council.html">Council</a></li>
+                      <li><a class="dropdown-item" href="./people-committee.html">Committee</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="peopleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Three Initiatives
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="peopleDropdown">
+                      <li><a class="dropdown-item" href="./dreammaker.html">1-Dream Maker</a></li>
+                      <li><a class="dropdown-item" href="./futuredecoder.html">2-Future Decoder </a></li>
+                      <li><a class="dropdown-item" href="./signalcatcher.html">3-Signal Catcher</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./events.html">Events & Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./research.html">Our Research</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>        
+               </ul>
+               
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+
+  <div class="container-fluid px-4 px-lg-5 py-4" style="max-width: 1400px;">
+    <div class="row">
+      
+      <!-- TOC -->
+<nav id="toc-wrapper" class="col-lg-3 d-none d-lg-block order-lg-1" style="top: 6rem; position: sticky;">
+  <div style="padding-left: 1rem; margin-bottom: 1.2rem;">
+    <h5 style="
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #a6a6a6;
+      margin: 0;
+      5
+      margin-top: 0.75rem;
+    ">
+      Content
+    </h5>
+    <div style="
+      width: 3rem;
+      height: 6px;
+      background-color: #a6a6a6;
+      border-radius: 1px;
+      margin-top: 0.25rem;
+      5
+    "></div>
+  </div>
+
+  <ul class="nav flex-column" id="toc">
+    <li class="nav-item">
+      <a class="nav-link" href="#s1">1. Consensus Without Computation: How PoS Replaces Working Proof</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#s2">2. How PoS Validators Earn from Block Rewards and Fees</a>
+      <ul class="nav flex-column ms-3">
+        <li class="nav-item"><a class="nav-link" href="#s2-1">2.1 Becoming a Qualified Validator</a></li>
+        <li class="nav-item"><a class="nav-link" href="#s2-2">2.2 Selection of Proposers and Attesters</a></li>
+        <li class="nav-item"><a class="nav-link" href="#s2-3">2.3 Rewards for Block Proposers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#s2-4">2.4 Rewards for Attesters</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#s3">3. Beyond the Base Layer: MEV, Bid Markets, and Strategic Revenue</a>
+      <ul class="nav flex-column ms-3">
+        <li class="nav-item"><a class="nav-link" href="#s3-1">3.1 Block Building Becomes a Market</a></li>
+        <li class="nav-item"><a class="nav-link" href="#s3-2">3.2 Proposers Choose by Auction</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#s4">4. Why Plain PoS Staking Variations Are Needed</a>
+    </li>
+  </ul>
+</nav>
+
+
+      <!-- Main -->
+      <div class="col-lg-9 order-lg-2 px-5 px-xl-7">
+        <h1 class="font-oswald fw-bold">
+          Understanding the Economic Layer of PoS: What Really Powers Staking Returns?</h1>
+
+        <!-- Meta line -->
+        <div class="meta-line">
+        <div class="d-flex align-items-center me-3">
+          <i class="bi bi-calendar me-2" style="color: #444;"></i>
+          <span>Mar 11, 2025</span>
+        </div>
+        <a href="https://www.linkedin.com/in//sayed-ahmad-zaatar" class="d-flex align-items-center text-decoration-none">
+          <i class="bi bi-person me-2" style="color: #444;"></i>
+          <div class="position-relative d-inline-block">
+            <span class="author-name" style="color: #444;">Sayed-Ahmad ZAATAR, </span>
+            <i class="bi bi-linkedin position-absolute" style="top: -0.4em; right: -1.2em; color: #0077b5; font-size: 0.85em;"></i>
+            
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/freya-tan-sg" class="d-flex align-items-center text-decoration-none" style="margin-left: 0.75rem;">
+          
+          <div class="position-relative d-inline-block">
+            <span class="author-name" style="color: #444;">Freya Tan</span>
+            <i class="bi bi-linkedin position-absolute" style="top: -0.4em; right: -1.2em; color: #0077b5; font-size: 0.85em;"></i>
+            
+          </div>
+        </a>
+        
+        <span class="author-name" style="color: #444; margin-left: 0.5rem;">and others</span>
+        
+      </div>
+
+
+        <!-- Banner -->
+        <img src="./assets/images/04-research/banner-sc.svg" class="img-fluid rounded mb-4" style="object-fit: cover;" alt="Banner">
+
+        <!-- Intro -->
+        <p class="fst-italic" style="font-family: 'Merriweather', serif; color: #000000; font-size: 1rem;">
+          Staking has become a central pillar in today’s on-chain financial landscape. A growing number of promising on-chain derivatives are built directly on top of staking systems.
+        </p>
+        <p class="fst-italic" style="font-family: 'Merriweather', serif; color: #000000; font-size: 1rem;">
+          This article examines how staking actually works under proof-of-stake (PoS): how it replaces the “work” of traditional mining, how rewards are generated and distributed, and what types of additional revenues can be unlocked through advanced strategies. 
+        </p>
+        
+        <!-- Key Insights -->
+        <div class="key-insights mb-6">
+          <h5>Key Insights</h5>
+          <ul>
+            <li>
+              Where PoW secures consensus via external costs (electricity), PoS replaces it with endogenous risk (stake slashing), shifting trust from energy expenditure to capital commitment.
+            </li>
+            <li>
+              At the validator level, 
+              Baseline issuance and tips only tell part of the story. 
+              MEV extraction, proposer-builder auctions, and restaking mechanisms have transformed <strong>block production</strong> into a dynamic revenue marketplace.
+            </li>  
+            <li>
+              On top of this, a second layer of innovation is emerging: staking as composable collateral. Liquid staking tokens (LSTs) and restaking protocols recast staked capital as <strong>yield-bearing primitives</strong> for broader financial ecosystems. This creates a multi-yield environment, but also introduces new systemic risks.  
+            </li>  
+          </ul>
+      
+        </div>
+
+        
+
+        <!-- Content -->
+        <!-- Section 1 -->
+        <div>
+          <h2 id="s1" class="rh1">Section 1 - Consensus Without Computation: How PoS Replaces Working Proof</h2>
+          <figure>
+            <img src="./assets/images/04-research/2503/s1.jpg" class="img-fluid rounded-3 shadow-sm my-4" alt="Page 3" />
+          </figure>
+          <p class="rp">
+            In traditional finance, transaction validation is entrusted to centralized intermediaries such as banks. In contrast, blockchains rely on decentralized participants to record and validate transactions. The system must ensure that these participants act honestly—without relying on a central authority. Both proof-of-work (PoW) and proof-of-stake (PoS) achieve this by tying the right to produce a new block to a meaningful economic commitment.  
+          </p>
+          <p class="rp">
+            PoW does this by asking: <strong>Who’s willing to burn the most electricity to earn trust? </strong>Miners compete by solving cryptographic puzzles using energy-intensive hardware. The first to solve the puzzle earns the right to propose a block and collect the associated reward. Because only one miner wins per round, and solving requires significant expenditure, attacks become economically prohibitive: cheating would mean losing enormous energy costs with no guaranteed return.
+          </p>
+          <p class="rp">
+            PoS, on the other hand, asks: <strong>Who has the most to lose if the system fails? </strong>Instead of computing power, validators commit value by locking up tokens (staking). Block proposers and attesters are selected randomly—with higher chances assigned to those who stake more. Honest behavior earns rewards, while dishonest actions (such as proposing invalid blocks) result in slashing—loss of stake. This “skin in the game” ensures aligned incentives: validators are financially motivated to secure the system, not undermine it.
+          </p>
+          <p class="rp">
+            In short, PoS replaces external energy expenditure with internal capital risk. Rather than proving effort through electricity, participants prove commitment through collateral. This shift makes consensus more efficient, but also introduces new economic and security dynamics—especially around how stake is distributed, how rewards are shared, and how new incentives (like MEV) reshape validator behavior.
+          </p>
+        </div>
+
+        <!-- Section 2 -->
+        <div>
+          <h2 id="s2" class="rh1">
+            Section 2 - [Baseline Yield] How PoS Validators Earn from Block Rewards and Fees  
+          </h2>
+          <p class="rp">
+            Validators under Ethereum’s proof-of-stake (PoS) model earn a predictable baseline yield, generated primarily from two key revenue streams: protocol issuance and transaction-related fees. Understanding these revenue streams requires looking into the validator qualification process, the distribution of roles in each block creation cycle, and how rewards are allocated.
+          </p>
+          
+          <h3 id="s2-1" class="rh2">Step 1: Becoming a Qualified Validator</h3>
+          <figure>
+            <img src="./assets/images/04-research/2503/s2-1.jpg" class="img-fluid rounded-3 shadow-sm mt-1 mb-4" alt="Page 3" />
+          </figure>
+          <p class="rp">
+            To join Ethereum’s validator set, participants must stake exactly 32 ETH. Additionally, they need to maintain a reliable infrastructure setup, including sufficient computational resources (CPU, RAM, SSD storage), and consistent network connectivity. Validators are financially accountable: downtime or malicious behavior (e.g., double-signing transactions) can result in slashing penalties—meaning a partial or full loss of their staked ETH. This risk ensures validators’ incentives align closely with network integrity.
+          </p>
+          
+          <h3 id="s2-2" class="rh2">
+            Step 2: Selection of Proposers and Attesters (Per Slot)
+          </h3>
+            <p class="rp">
+            Ethereum’s PoS system operates in slots of about 12 seconds each. In every slot, validators are randomly chosen—weighted by their stake size—to perform distinct roles:
+            </p>
+            
+            <ul class="rp">
+              <li>
+                <strong>One proposer</strong> is selected to create a new block.
+              <li>
+                Around <strong>128 attesters</strong> are chosen to confirm the validity of the proposed block.
+              </li>
+              
+            </ul>
+            <p class="rp">
+              This structure ensures decentralization and robust security checks, while spreading participation across the validator pool.  
+            </p>
+
+          <h3 id="s2-3" class="rh2">
+            Step 3: Rewards for Block Proposers
+          </h3>
+            <figure>
+            <img src="./assets/images/04-research/2503/s2-2.jpg" class="img-fluid rounded-3 shadow-sm mt-1 mb-4" alt="Page 3" />
+            </figure>
+          <p class="rp">
+            Block proposers earn revenue from two main sources:
+          </p>
+          <ul class="rp">
+              <li>
+                <strong>Protocol Issuance: </strong> Roughly 10%–15% of newly minted ETH per slot goes directly to the proposer.
+              </li>
+              <li>
+                <strong>Priority Tips (EIP-1559 fees):</strong>
+                Under Ethereum’s fee model, each transaction has a base fee (burned) plus an optional tip to incentivize fast inclusion. These tips, known as priority fees, are paid directly to the proposer, providing significant additional revenue potential.
+              </li>
+              
+            </ul>
+        
+          <p class="rp">
+            Here, it overlooks advanced yield sources—such as maximal extractable value (MEV) and sophisticated restaking strategies—that can significantly enhance validator revenues. To fully appreciate these complexities, the next sections will explore how additional financial strategies build upon this foundational yield layer.
+          </p>
+
+          <h3 id="s2-4" class="rh2">
+            Step 4: Rewards for Attesters
+          </h3>
+
+          <p class="rp">
+            The 128 attesters selected per slot verify and approve the proposer’s block, forming the critical layer of consensus validation. Attesters share the remaining protocol issuance (about 85%–90% of the newly minted ETH per slot). While each attester individually earns less than the proposer, their collective yield is substantial, incentivizing broad participation and reinforcing network stability.
+          </p>
+          
+        </div>
+
+        <!-- Section 3 -->
+        <div>
+          <h2 id="s3" class="rh1">Section 3 - 
+            [Beyond the Base Layer] MEV, Bid Markets, and Strategic Revenue
+          </h2>
+          
+          <figure>
+            <img src="./assets/images/04-research/2503/s3.jpg" class="img-fluid rounded-3 shadow-sm mt-1 mb-4" alt="Page 3" />
+          </figure>
+          <p class="rp">
+            The “vanilla” staking model we described in Section 2—where proposers simply receive 10 %–15 % of new issuance—no longer captures how rewards flow in practice. Today’s block production has grown far more complex, driven by Maximal Extractable Value (MEV) opportunities and specialized block‐building strategies. To manage this complexity, Ethereum has adopted Proposer-Builder Separation (PBS), splitting the roles of building and proposing a block.
+          </p>
+
+          <h3 id="s3-1" class="rh2">3.1 Block Building Becomes a Market</h3>
+          
+          <p class="rp">
+            Under PBS, independent builders assemble candidate blocks instead of the proposer doing so itself. Builders optimize their blocks by ordering transactions to extract MEV—everything from arbitrage and liquidation sniping to sandwich attacks—and then bid (or “bribe”) the proposer with an ETH payment for the privilege of having their block included.
+          </p>
+          <ul class="rp">
+              <li>
+                <strong>Candidate Block Data:</strong> Roughly 10%–15% of newly 
+                minted ETH per slot goes directly to the proposer.
+              </li>
+              <li>
+                <strong>MEV Strategy: </strong>
+                Builders embed intensive trading or ordering strategies within their block to maximize profits.
+              </li>
+              <li>
+                <strong>Bid Value: </strong>
+                The ETH amount offered to the proposer acts as a direct incentive, above and beyond base rewards.
+              </li>
+              
+            </ul>
+        
+          
+          <h3 id="s3-2" class="rh2">3.2 Proposers Choose by Auction</h3>
+          <p class="rp">
+            When a validator is selected as proposer, it no longer constructs the block. Instead, it reviews competing builder submissions and selects the one with the highest bid, capturing that value in addition to its protocol issuance and any priority tips under EIP-1559. This auction mechanism turns blockspace into a dynamic marketplace—driving proposers’ earnings well above the static issuance rate during high-MEV periods.
+          </p>
+         </div>
+
+        <!-- Section 4 -->
+        <div>
+          <h2 id="s4" class="rh1">Section 4 - Why Plain PoS Staking Variations Are Needed</h2>
+          <figure>
+            <img src="./assets/images/04-research/2503/s4.jpg" class="img-fluid rounded-3 shadow-sm mt-1 mb-4" alt="Page 3" />
+          </figure>
+          
+          <p class="rp">
+           Plain staking remains the bedrock of Ethereum’s security and economic model. By running your own validator with 32 ETH, you capture 100 % of protocol issuance, priority tips, and MEV rewards, while retaining full custody and control over your funds. No intermediary takes a cut, and you directly align your economic stake with network integrity.
+          </p>
+          <p class="rp">
+            Yet these very strengths also highlight its practical constraints. A single validator requires a high capital outlay (32 ETH), continuous 24/7 operational reliability, and exposes you to slashing risks for downtime or misconfiguration. On top of that, staked ETH can only be withdrawn after a 7–27 day delay, limiting your ability to respond to market moves or redeploy capital elsewhere. These factors collectively raise the barrier to entry and concentrate staking among well-capitalized, technically proficient operators.  
+          </p>
+          <p class="rp">
+            To broaden participation and improve capital efficiency, the ecosystem has developed a variety of staking derivatives and services:
+          </p>
+          <ul class="rp">
+              <li>
+                <strong>Managed Staking Services (stSaaS) </strong>
+                shoulder the technical burden and slash-risk on behalf of users, trading a small fee for ease of operation.
+              </li>
+              <li>
+                <strong>Liquid Staking</strong> breaks up the minimum stake and removes withdrawal delays by issuing tokenized claims on staked ETH, boosting liquidity.
+              </li>
+              
+              <li>
+                <strong>Restaking Protocols</strong>
+                allow pooled collateral to secure additional layers (e.g., rollups or lending markets), earning extra yield on the same capital.
+              </li>
+              
+            </ul>
+
+          <p class="rp">
+            These variations do not replace plain staking—they build on its security assumptions—but they address its practical limitations. By reducing minimum capital requirements, automating uptime guarantees, mitigating slashing exposure, and freeing up liquidity, they make PoS participation accessible to a far wider audience and unlock new yield opportunities on top of the baseline rewards described in Sections 2 and 3.
+          </p>
+          
+        </div>
+
+
+
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC active highlight -->
+  <script>
+    const tocLinks = document.querySelectorAll('#toc a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      document.querySelectorAll('h2, h3').forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

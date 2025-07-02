@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ <!-- Favicon icon-->
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png?v=2">
+<link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/images/favicon/block-safari-pinned-tab.svg" color="#8b3dff">
+<link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#8b3dff">
+<meta name="msapplication-config" content="./assets/images/favicon/tile.xml">
+
+<!-- Color modes -->
+<script src="./assets/js/vendors/color-modes.js"></script>
+
+<!-- Libs CSS -->
+<link href="./assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+<link href="./assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<!-- Scroll Cue -->
+<link rel="stylesheet" href="./assets/libs/scrollcue/scrollCue.css">
+
+<!-- Box icons -->
+<link rel="stylesheet" href="./assets/fonts/css/boxicons.min.css">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="./assets/css/theme.min.css">
+      <title>What If Carbon Is Just the Beginning? Rethinking the Environmental Cost of PoW Mining</title>
+   </head>
+
+
+<body class="bg-white">
+  <main>
+   <!-- Navbar -->
+<header>
+   <nav class="navbar navbar-expand-lg navbar-light w-100">
+      <div class="container px-3">
+         <a class="navbar-brand" href="./index.html"><img src="./assets/images/logo/logo.svg" alt /></a>
+         <button class="navbar-toggler offcanvas-nav-btn" type="button">
+            <i class="bi bi-list"></i>
+         </button>
+         <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+            <div class="offcanvas-header">
+               <a href="./index.html" class="text-inverse"><img src="./assets/images/logo/logo.svg" alt /></a>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body pt-0 align-items-center">
+               <ul class="navbar-nav mx-auto align-items-lg-center">
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./people-structure.html" id="peopleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      People
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="peopleDropdown">
+                      <li><a class="dropdown-item" href="./people-structure.html">Governance</a></li>
+                      <li><a class="dropdown-item" href="./people-council.html">Council</a></li>
+                      <li><a class="dropdown-item" href="./people-committee.html">Committee</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="peopleDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Three Initiatives
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="peopleDropdown">
+                      <li><a class="dropdown-item" href="./dreammaker.html">1-Dream Maker</a></li>
+                      <li><a class="dropdown-item" href="./futuredecoder.html">2-Future Decoder </a></li>
+                      <li><a class="dropdown-item" href="./signalcatcher.html">3-Signal Catcher</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./events.html">Events & Projects</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./research.html">Our Research</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>        
+               </ul>
+               
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+
+  <div class="container-fluid px-4 px-lg-5 py-4" style="max-width: 1400px;">
+    <div class="row">
+      
+      <!-- TOC -->
+<nav id="toc-wrapper" class="col-lg-3 d-none d-lg-block order-lg-1" style="top: 6rem; position: sticky;">
+<div style="padding-left: 0.2rem; margin-bottom: 1.2rem;">
+  <h5 style="
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #5c677d;
+    margin: 0;
+    margin-top: 0.75rem;
+  ">
+    Content
+  </h5>
+  <div style="
+    width: 3rem;
+    height: 6px;
+    background-color: #5c677d;
+    border-radius: 1px;
+    margin-top: 0.25rem;
+  "></div>
+</div>
+  <ul class="nav flex-column" id="toc">
+    <li class="nav-item"><a class="nav-link" href="#s1">1. PoW’s Explosive Demand on the Energy</a>
+      <ul class="nav flex-column ms-3">
+        <li class="nav-item"><a class="nav-link" href="#s1-1">1.1 From Hobbyist Setups to Infrastructure-Scale Loads</a></li>
+        <li class="nav-item"><a class="nav-link" href="#s1-2">1.2 The Zero-Sum Energy Arms Race</a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#s2">2. Carbon Intensity Is Rising, Is “Renewable Arbitrage” the Answer?</a>
+      <ul class="nav flex-column ms-3">
+        <li class="nav-item"><a class="nav-link" href="#s2-1">2.1 Emissions Are Climbing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#s2-2">2.2 The Pitfalls of Renewable Arbitrage</a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#s3">3. Hydropower’s Hidden Ecological Toll</a>
+      <ul class="nav flex-column ms-3">
+        <li class="nav-item"><a class="nav-link" href="#s3-1">3.1 Not Against Dams</a></li>
+        <li class="nav-item"><a class="nav-link" href="#s3-2">3.2 What Happens When Dams Skip Oversight</a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#s4">4. Air Pollution & Public Health</a></li>
+    <li class="nav-item"><a class="nav-link" href="#s5">5. Hardware Burden Behind the Hash Rate</a></li>
+    <li class="nav-item"><a class="nav-link" href="#s6">Look Ahead</a></li>
+  </ul>
+</nav>
+
+
+      <!-- Main -->
+      <div class="col-lg-9 order-lg-2 px-5 px-xl-7">
+        <h1 class="font-oswald fw-bold">What If Carbon Is Just the Beginning? Rethinking the Environmental Cost of PoW Mining</h1>
+
+        <!-- Meta line -->
+        <div class="meta-line">
+        <div class="d-flex align-items-center me-3">
+          <i class="bi bi-calendar me-2" style="color: #444;"></i>
+          <span>Jan 10, 2025</span>
+        </div>
+        <a href="https://www.linkedin.com/in/freya-tan-sg/" class="d-flex align-items-center text-decoration-none">
+          <i class="bi bi-person me-2" style="color: #444;"></i>
+          <div class="position-relative d-inline-block">
+            <span class="author-name" style="color: #444;">Freya Tan</span>
+            <i class="bi bi-linkedin position-absolute" style="top: -0.4em; right: -1.2em; color: #0077b5; font-size: 0.85em;"></i>
+          </div>
+          
+        </a>
+      </div>
+
+
+        <!-- Banner -->
+        <img src="./assets/images/04-research/banner-sc.svg" class="img-fluid rounded mb-4" style="object-fit: cover;" alt="Banner">
+
+        <!-- Intro -->
+        <p class="fst-italic" style="font-family: 'Merriweather', serif; color: #000000; font-size: 1rem;">
+          While the high energy consumption of cryptocurrency mining is widely acknowledged, 
+          its broader environmental footprint is far less understood. Beyond carbon emissions, 
+          PoW-based mining contributes to air pollution, e-waste, and even ecosystem disruption, 
+          particularly in regions where "green" energy like hydroelectricity is diverted from public use 
+          or damages local habitats. This article systematically examines not only the scale of energy consumption, 
+          but also the often-overlooked environmental burdens that accompany PoW mining.
+        <!-- Key Insights -->
+        <div class="key-insights mb-6">
+          <h5>Key Insights</h5>
+          <ul>
+            <li>Despite the rise of energy-efficient alternatives like Proof-of-Stake, global electricity consumption from PoW mining continues to grow, reaching levels comparable to the annual usage of countries like Argentina in 2024.</li>
+            <li>Following China’s crackdown on crypto mining, operations shifted to regions with more fossil-fuel-dependent grids, halving the share of renewable energy. But this transition is not a totally bad thing, as it also stopped the ecological damage caused by unregulated hydropower.</li>
+            <li>E-waste is often a less-focused aspect of PoW’s impact. Fortunately, due to extended device lifespans and recycling programs, its volume has cut in half, from 59.88 kilotons to 30 kilotons.
+          </ul>
+      
+        </div>
+
+        
+
+        <!-- Content -->
+        <!-- Section 1 -->
+        <div>
+          <h2 id="s1" class="rh1">Section 1 - PoW’s Explosive Demand on the Energy</h2>
+          <h3 id="s1-1" class="rh2">1.1 From Hobbyist Setups to Infrastructure-Scale Loads</h3>
+          <p class="rp">
+            Just over a decade ago, Bitcoin and its cousins were mined on consumer PCs, drawing a few megawatts at most. Today, PoW operations collectively pull roughly 200 TWh per year—an amount on par with a small nation’s electricity consumption. This transformation reflects professionalization: industrial-scale mining farms, purpose-built ASICs, and long-term power contracts have turned what was once a fringe activity into a serious grid player. 
+          </p>
+          <p class="rp">
+            The chart below captures that shift: what began as lab experiments is now a fundamental factor in energy market forecasts and utility planning.
+          </p>
+          <figure>
+            <img src="./assets/images/04-research/2501/mapping2.png" class="img-fluid rounded-3 shadow-sm my-4" alt="Page 3" />
+          </figure>
+          <h3 id="s1-2" class="rh2">1.2 The Zero-Sum Energy Arms Race</h3>
+          <p class="rp">
+            Every additional miner in a PoW network raises overall electricity demand but does not increase total rewards. Block subsidies and transaction fees remain fixed, so miners are locked in a perpetual contest—each must burn more power simply to keep pace with competitors. This “arms race” dynamic (often described as "Involution") drives ever-rising energy use without creating new economic value. In effect, securing the ledger has become synonymous with an unending escalation of computing—and power—expenditure.
+          </p>
+        </div>
+
+        <!-- Section 2 -->
+        <div>
+          <h2 id="s2" class="rh1">Section 2 - Carbon Intensity Is Rising, Is “Renewable Arbitrage” the Answer?</h2>
+          <h3 id="s2-1" class="rh2">2.1 Emissions Are Climbing</h3>
+          <p class="rp">
+            Although PoW mining continues to chase low-cost power, its carbon footprint has grown worse. After China’s 2021 crackdown forced a mass migration, the share of renewables in miner energy mix fell from roughly 42 % to 25 %.
+          </p>
+          <figure>
+            <img src="./assets/images/04-research/2501/mapping3.png" class="img-fluid rounded-3 shadow-sm mt-1 mb-4" alt="Page 3" />
+          </figure>
+          <p class="rp">
+            As a result, estimated carbon intensity spiked from about 480 g CO₂/kWh before the ban to nearly 570 g CO₂/kWh—well above the U.S. grid average of 370 g. Combined with rising electricity use, total mining emissions now approach 130 million tonnes of CO₂ per year, rivaling entire industrial sectors in climate impact.
+            </p>
+          
+          <h3 id="s2-2" class="rh2">2.2 The Pitfalls of Renewable Arbitrage</h3>
+          <p class="rp">
+          Some argue that mining should simply relocate to hydropower-rich regions or invest in new renewables—so-called “renewable arbitrage.” In theory, diverting surplus clean energy to mining would reduce coal- or gas-fired generation. In practice, however, this logic has two major flaws:  
+          </p>
+          
+          <ol class="rp">
+            <li>
+              <span style="font-weight: bold; font-size: 1.1em;">Competing Societal Needs</span>
+              <br>It’s true that crypto mining can, in some cases, stimulate investment into renewable infrastructure. But we must ask: to what end? Mining is a zero-output activity—it consumes electricity to secure blockchains but creates no physical goods or services. In contrast, energy used by homes, factories, or transit systems yields tangible public and economic value. Under the SDG framework, clean energy is a constrained global resource. Diverting it to a task that is fundamentally avoidable—maintaining PoW competition—carries a high opportunity cost. Justifying such consumption simply because it’s "green" ignores its displacement of higher-priority uses.
+              </li>
+            <li>
+              <span style="font-weight: bold;font-size: 1.1em; ">Clean Energy ≠ Cheap Energy</span>
+              <br>Technological progress has brought down the cost of renewables, but not enough to erase the economic gap—especially in regions where fossil fuels are still subsidized or politically favored. As long as coal and gas remain cheaper at the margin, mining operations will chase those sources. Business actors in mining must be economically rational. This is why, despite the technical ability to use clean power, actual adoption lags behind potential. 
+            </li>
+            <li>
+              <span style="font-weight: bold;font-size: 1.1em;">Depends on Fossil Backup for Reliability</span>
+              <br>Solar and wind are inherently intermittent. Mining operations demand uninterrupted power. This creates a dependency on backup systems, usually fossil-based peaker plants, to stabilize supply.
+            </li>
+          </ol>
+
+        <p class="rp">
+          In one word, <strong>renewables cannot legitimize avoidable waste.</strong> While sourcing clean energy may lower the carbon intensity of mining, it does not alter the fundamental reality: PoW consumes electricity not to produce goods or services, but to outcompete others in a zero-sum race. 
+        </p>
+        </div>
+
+        <!-- Section 3 -->
+        <div>
+          <h2 id="s3" class="rh1">Section 3 - Hydropower’s Hidden Ecological Toll</h2>
+          <p class="rp">
+            Hydropower is often framed as the green alternative to coal or gas. It emits fewer direct carbon emissions during operation, but its broader ecological footprint is significant and long-lasting.
+          </p>
+          <figure>
+            <img src="./assets/images/04-research/2501/mapping4.png" class="img-fluid rounded-3 shadow-sm mt-1 mb-4" alt="Page 3" />
+          </figure>
+          
+          <h3 id="s3-1" class="rh2">3.1 Not Against Dams</h3>
+          <p class="rp">
+            We should not dismiss all dams indiscriminately. Most large dams undergo years of planning, including environmental impact assessments, public consultation, and regulatory oversight. 
+            And many of them play critical roles in national development. 
+            However, hydropower projects built or repurposed specifically for PoW mining raise distinct concerns. 
+            
+            </p>
+          <p class="rp">
+            Firstly, <span class="rp-f">hydropower stations built or repurposed for crypto mining operate outside of formal review</span>, often in remote or under-regulated areas. 
+            These “off-grid” or informal installations are not subject to the same design standards or environmental safeguards. 
+            </p>
+          <p class="rp">
+            Secondly, they are <span class="rp-f">built in addition to existing infrastructure</span>.
+             
+            Existing regulated dams have already reshaped rivers, wetlands, and local ecosystems. While many regions do have some ecological capacity to support hydropower, that capacity is not unlimited. 
+            Adding new, unregulated crypto dams risks <span class="rp-f">exceeding local environmental thresholds.</span>
+            Furthermore, unlike public utilities, miners, who are often driven by short-term profit, are unlikely to design with restraint or accountability, compounding the damage.
+          </p>
+          
+          <h3 id="s3-2" class="rh2">3.2 What Happens When Dams Skip Oversight</h3>
+          <p class="rp">
+          Here, we decode the specific ecological tolls likely to result from unregulated “crypto dams.” 
+            Unlike regulated hydropower stations, which often include <strong>fish ladders, sediment management protocols, and flow stabilization mechanisms, illegal private dams are usually designed without such mitigation measures. </strong>
+            As a result, they frequently:
+          </p>
+          
+          <ul class="rp">
+            <li>
+              <span style="font-weight: bold; ">Block migratory fish routes, </span>disrupt sediment transport, and erode downstream riverbeds
+            </li>
+            <li>
+              <span style="font-weight: bold;">Kill aquatic species </span>
+              through unbuffered turbine intake and abrupt flow fluctuations</li>
+            <li>
+              <span style="font-weight: bold;">Threaten local food chains, </span>
+              particularly in fisheries-dependent communities
+            </li>
+          </ul>
+
+        <p class="rp">
+          In addition, flooded vegetation in dam reservoirs decomposes anaerobically, releasing methane (CH₄) and carbon dioxide (CO₂). Hydropower is rarely emission-free: global estimates suggest it contributes 0.5–1.2 Pg CO₂-equivalent annually, with tropical regions being especially vulnerable. When miners tap into these projects without oversight, they externalize these emissions without contributing to broader energy reform or carbon reduction.</p>
+        </div>
+
+        <!-- Section 4 -->
+        <div>
+          <h2 id="s4" class="rh1">Section 4 - Air Pollution & Public Health</h2>
+          <figure>
+            <img src="./assets/images/04-research/2501/mapping5.png" class="img-fluid rounded-3 shadow-sm mt-1 mb-4" alt="Page 3" />
+          </figure>
+          
+          <p class="rp">
+            While carbon emissions are often the headline concern, PoW mining’s dependence on fossil-fueled electricity also brings serious air quality consequences. 
+            Power plants burning coal and gas emit SO₂, NOₓ, and PM₂.₅—pollutants that degrade air quality and directly harm cardiovascular and respiratory health. 
+            As the image shows, just 34 large Bitcoin mining sites in the U.S. consume over a third of Los Angeles’s total power. 
+            This dramatic energy demand imposes environmental costs that, in the end, <span style="font-weight: bold">everyone in the earth pays for.</span>
+          </p>
+          <p class="rp">
+            What’s more troubling is the geographical shift of burden.
+          Miners consistently pursue the cheapest available electricity, which often leads them to less-developed countries and loosely regulated regions.  
+          </p>
+          <p class="rp">
+          Unlike manufacturing or logistics hubs, mining sites create few jobs and generate no meaningful industrial linkages. 
+            <span class="rp-f">Namely, the health toll falls on local communities,
+            but without local economic gain. Profits remain centralized elsewhere.</span>
+          </p>
+        </div>
+
+        <!-- Section 5 -->
+        <div>
+          <h2 id="s5" class="rh1">Section 5 - Hardware Burden Behind the Hash Rate</h2>
+          
+          
+          <p class="rp">
+          Beyond energy consumption and emissions, PoW mining produces a growing stream of electronic waste. This is a less visible but equally material environmental impact. 
+          </p>
+          <p class="rp">
+            Two forces drive this e-waste cycle: </p>
+          <ul>
+            <li class="rp">First, <span class="rp-f">short hardware lifespans.</span> Unlike conventional computing equipment, ASIC miners are built for high performance, not durability or reuse. Once outclassed, they offer little residual utility. </li>
+            <li class="rp">Second, and more fundamentally, competitive pressure. As noted in earlier sections, mining is a zero-sum race. 
+              <span class="rp-f">The moment newer, more efficient hardware becomes both technically mature and cost-effective, miners are economically compelled to upgrade.</span>
+              
+              Operators may delay adopting the very latest generation, but they will switch en masse once returns justify it. 
+              The result is a recurring wave of discarded devices, clustered around tipping points in chip economics.</li>
+          </ul>
+          <figure>
+            <img src="./assets/images/04-research/2501/mapping6.png" class="img-fluid rounded-3 shadow-sm mt-1 mb-4" alt="Page 3" />
+          </figure>
+
+          <p class="rp">
+            Encouragingly, recent years show some signs of progress. As the chart illustrates, e-waste generation declined significantly in 2024, thanks to longer hardware lifespans and a reported 87% recycling or resale rate of retired devices. These shifts reflect both technical maturity and modest improvements in end-of-life management.</p>
+          <p class="rp">
+          However, the gains remain relative. Even with reduced volumes, mining still produces tens of thousands of tons of e-waste annually—42 kilotons projected for 2025 alone. And unlike household electronics, these machines are difficult to repurpose and rarely integrated into circular material flows.</p>
+        
+        
+        </div>
+
+        <!-- Section Tail -->
+        <div>
+          <h2 id="s6" class="rh1">Looking Ahead</h2>
+          
+          
+          <p class="rp">
+          PoW mining has seen real technical progress. Machines are becoming more energy-efficient, and some operators experiment with cleaner power or hardware recycling. But these efforts remain limited in scope because polluting practices are still cheaper. As long as that cost imbalance persists, “green mining” will remain rare.
+          </p>
+          <p class="rp">
+          <strong>What’s needed is a rule-based correction: clear, enforceable policies that internalize the environmental costs</strong> of energy use, carbon emissions, and hardware disposal. If miners choose not to adopt cleaner methods, they should face direct financial penalties—higher energy tariffs, carbon taxes, or e-waste compliance costs. That’s the only way to shift incentives and make sustainability the rational business choice.
+          </p>
+          <p class="rp">
+          <strong>Yet such rules are almost entirely missing today. </strong>
+          Jurisdictions like the EU and U.S. have introduced energy disclosure requirements, but these function only as transparency tools—not regulatory levers. Some local bans or licensing regimes, such as those in New York or Kazakhstan, impose limits on specific mining operations, but hardware can be relocated with ease. Strategic documents, including the White House’s 2022 crypto-climate report, have acknowledged the problem and suggested solutions, yet no enforceable carbon caps, renewable usage mandates, or e-waste regulations have followed. The incentive structure remains intact: the lowest-cost, highest-emissions path is still economically rational.  
+          </p>
+          
+
+          <p class="rp">
+            And because crypto infrastructure moves across borders with ease, national policies are not enough. 
+            Effective regulation must be globally coordinated. 
+            A multi-lateral framework under Sustainable Development Goals (SDGs) is needed. 
+            Otherwise, the most harmful forms of mining will continue to thrive where oversight is weakest.
+          </p>
+          
+        </div>
+
+
+<!-- References Section -->
+<div style="margin-top: 4rem; padding: 1.5rem; background-color: #f8f8f8; border-radius: 4px;">
+  <h4 style="font-family: 'Oswald', sans-serif; font-size: 1.25rem; font-weight: 600; color: #333; margin-bottom: 1rem;">
+    References
+  </h4>
+  <ol style="font-size: 0.95rem; line-height: 1.7; color: #222; padding-left: 1.2rem; margin: 0;">
+    <li>
+      Elsevier. "The true climate impact of Bitcoin mining." 
+      <a href="https://doi.org/10.1016/j.nexus.2024.100274" target="_blank" style="color: #000; text-decoration: none;">
+        https://doi.org/10.1016/j.nexus.2024.100274
+      </a>. Accessed: January 15, 2025.
+    </li>
+    <li>
+      Cambridge Centre for Alternative Finance. "Cambridge Bitcoin Electricity Consumption Index (CBECI)." 
+      <a href="https://ccaf.io/cbnsi/cbeci" target="_blank" style="color: #000; text-decoration: none;">
+        https://ccaf.io/cbnsi/cbeci
+      </a>. Accessed: January 15, 2025.
+    </li>
+    <li>
+      Krause & Tolaymat. "Quantification of energy and carbon costs for mining cryptocurrencies." 
+      <a href="https://www.nature.com/articles/s41467-021-22256-3" target="_blank" style="color: #000; text-decoration: none;">
+        https://www.nature.com/articles/s41467-021-22256-3
+      </a>. Accessed: January 15, 2025.
+    </li>
+    <li>
+      Polytechnique Insights. "Bitcoin’s electricity consumption is comparable to that of Poland." 
+      <a href="https://www.polytechnique-insights.com/en/columns/energy/bitcoin-electricity-consumption-comparable-to-that-of-poland" target="_blank" style="color: #000; text-decoration: none;">
+        https://www.polytechnique-insights.com/en/columns/energy/bitcoin-electricity-consumption-comparable-to-that-of-poland
+      </a>. Accessed: January 15, 2025.
+    </li>
+    <li>
+      The White House. "Climate and Energy Implications of Crypto-Assets in the United States." September 2022. 
+      <a href="https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/09/09-2022-Crypto-Assets-and-Climate-Report.pdf" target="_blank" style="color: #000; text-decoration: none;">
+        https://bidenwhitehouse.archives.gov/...
+      </a>. Accessed: January 15, 2025.
+    </li>
+    <li>
+      Wired. "Bitcoin Miners Flock to Countries With Cheap Electricity After China Ban." 
+      <a href="https://www.wired.com/story/bitcoin-mining-china-ban-crypto-cryptocurrency-wechat/" target="_blank" style="color: #000; text-decoration: none;">
+        https://www.wired.com/...
+      </a>. Accessed: January 15, 2025.
+    </li>
+    <li>
+      Harvard T.H. Chan School of Public Health. "Bitcoin mining increases levels of air pollution harmful to human health." 
+      <a href="https://hsph.harvard.edu/news/bitcoin-mining-increases-levels-of-air-pollution-harmful-to-human-health/" target="_blank" style="color: #000; text-decoration: none;">
+        https://hsph.harvard.edu/...
+      </a>. Accessed: January 15, 2025.
+    </li>
+    <li>
+      Digiconomist. "Bitcoin Electronic Waste Monitor." 
+      <a href="https://digiconomist.net/bitcoin-electronic-waste-monitor/" target="_blank" style="color: #000; text-decoration: none;">
+        https://digiconomist.net/bitcoin-electronic-waste-monitor/
+      </a>. Accessed: January 15, 2025.
+    </li>
+    <li>
+      Cambridge Centre for Alternative Finance. "Cambridge Digital Mining Industry Report." 
+      <a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/cambridge-digital-mining-industry-report/" target="_blank" style="color: #000; text-decoration: none;">
+        https://www.jbs.cam.ac.uk/...
+      </a>. Accessed: January 15, 2025.
+    </li>
+  </ol>
+</div>
+
+
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC active highlight -->
+  <script>
+    const tocLinks = document.querySelectorAll('#toc a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      document.querySelectorAll('h2, h3').forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      tocLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
