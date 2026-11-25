@@ -1,0 +1,391 @@
+email_body_template = """\
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation to Recommend Companies for the 2025 WIC Distinguished Contribution Award</title>
+    <style>
+        /* Reset styles for email clients */
+        body, table, td, div, p, a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        .email-container {
+            max-width: 650px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    rgba(255,255,255,0.06) 0px,
+                    rgba(255,255,255,0.06) 4px,
+                    transparent 4px,
+                    transparent 8px
+                ),
+                linear-gradient(135deg, #1e90ff, #0066cc, #003366);
+            background-size: auto, cover;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+     
+        .content {
+            padding: 30px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #0d6efd, transparent);
+            margin: 40px 0;
+        }
+        
+        .section-title {
+            color: #0d6efd;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .highlight {
+            background-color: #e7f1ff;
+            border-left: 4px solid #0d6efd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            border-left: 3px solid #0d6efd;
+            padding-left: 15px;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 14px 25px;
+            background: linear-gradient(to right, #0d6efd, #0b5ed7);
+            color: white !important;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            font-size: 16px;
+            margin: 20px 0;
+            box-shadow: 0 3px 5px rgba(13, 110, 253, 0.3);
+        }
+        
+        .footer {
+            text-align: left;
+            padding: 40px;
+            background-color: #f1f3f5;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .signature {
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: left;
+        }
+        
+        .company-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .logo-item {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 8px 15px;
+            font-weight: 600;
+            color: #495057;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .quote-author {
+            font-weight: 600;
+            margin-top: 10px;
+            color: #495057;
+            text-align: right;
+        }
+        
+        .more-link {
+            color: #636d82;
+            text-decoration: none;
+        }
+        
+        .more-link:hover {
+            text-decoration: underline; /* 悬停时可增加下划线 */
+        }
+
+        
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+  .callout {
+    background: rgba(255, 255, 255, 0.5); 
+    padding: 1px 12px; 
+    border-radius: 6px;
+    margin: 0 0 !important;
+    border: 1.5px solid rgba(200, 200, 200, 0.8);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); 
+}
+
+        
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        .benefit-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #e9ecef;
+        }
+        
+        .benefit-title {
+            color: #0d6efd;
+            font-weight: 600;
+            margin-top: 0;
+        }
+   </style>
+</head>
+<body>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td align="center">
+                <div class="email-container">
+                    <!-- Header -->
+                    <div class="header">
+                        <h3>  GYDA Newsletter</h3>
+                        <h1> Q1–Q3 2025 Update </h1>
+                        <p style="color: white; font-size: 18px;">Issue Date: Aug 12 2025</p>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="content">
+                        <div class="section">
+                            <p><strong>Dear {name},</strong></p>
+                            <p>I hope this message finds you well.</p>
+                            <p>
+                                I'm writing to update you on our progress. This document outlines the latest developments, key milestones, and next steps in our ongoing initiatives.
+                            </p>
+                            
+                            <div class="callout">
+                                <p>
+                                    <strong>⚫Quick Update: </strong>I’m pleased to share that our new official website is now live at <a href="https://gyda.online" class="more-link" target="_blank">https://gyda.online</a>. I warmly invite you to explore it at your convenience.
+
+                                </p>
+                                <p>
+                                    <strong>⚫Stay in Touch: </strong> 
+                                    I greatly valued our recent exchange and would be delighted to continue our conversation. You’re most welcome to reach me directly on WhatsApp at +41 76 729 07 44.
+                                </p>
+                            </div>
+
+                            <p>
+                                At GYDA, we are committed to advancing youth-led innovation in global sustainability, digital governance, and cultural diplomacy. From UN exhibitions to climate tech forums, our Q1–Q3 2025 initiatives have brought together participants from over 15 countries, paving the way for transformative collaborations in the months ahead.
+                            </p>
+                        </div>
+                        
+                        <div class="divider"></div>
+
+                        <!-- Completed Milestones (Q1–Q3 2025)-->
+                    <div class="section">
+                      <h2 class="section-title">Completed Milestones (Q1–Q3 2025)</h2>
+                    
+                    
+                      <!-- Jan 12–13, 2025 — IRENA Assembly -->
+                      <p><strong>Jan 12–13, 2025 — GYDA Youth Delegation at the IRENA Assembly (Abu Dhabi)</strong><br>
+                        <a href="https://gyda.online/case-dm-2.html" class="more-link" target="_blank">https://gyda.online/case-dm-2.html</a><br>
+                        The International Renewable Energy Agency (IRENA) is an intergovernmental body supporting countries in their transition to a sustainable energy future. Throughout the Assembly, our youth delegates engaged directly with international policymakers, attended strategic plenaries, and joined skill-building workshops simulating policy design and multilateral negotiations.
+                      </p>
+                      <ul>
+                        <li>Firsthand exposure to how intergovernmental energy policy is shaped and debated</li>
+                        <li>Dialogue with sustainability leaders and renewable-energy experts</li>
+                        <li>Training in international cooperation, diplomacy, and multilateral coordination</li>
+                        <li>Exploration of career pathways within IRENA, the UN system, and development agencies</li>
+                      </ul>
+                    
+                      <!-- March 2025 — PWCS -->
+                      <p><strong>March 2025 — Penn Wharton China Summit (Philadelphia / Online)</strong><br>
+                        <a href="https://gyda.online/case-sc-1-wharton.html" class="more-link" target="_blank">https://gyda.online/case-sc-1-wharton.html</a><br>
+                        The Summit reaches an online audience of 80,000+ and partners with 100+ student-led organizations and 20+ global media platforms. Past participants span 4 countries, 34 U.S. states, and 72 cities. GYDA participated as a supporting partner, delivering structured sessions on macro inflection points, industry restructuring, and international business foresight.
+                      </p>
+                    
+                      <!-- March 23, 2025 — LSE China Forum -->
+                      <p><strong>Mar 23, 2025 — LSE China Development Forum (London)</strong><br>
+                        <a href="https://gyda.online/case-sc-1-lse.html" class="more-link" target="_blank">https://gyda.online/case-sc-1-lse.html</a><br>
+                        Established in 2009, CDF is one of Europe’s leading platforms for dialogue on China’s development, convening 25+ distinguished speakers and 400+ participants annually across policy, academia, finance, and business. GYDA joined as a supporting partner under its <em>Signal Catcher — Seminar</em> programme.
+                      </p>
+                    
+                      <!-- Apr 18, 2025 — Reimagining Education -->
+                      <p><strong>Apr 18, 2025 — “Reimagining Education” Seminar (Columbia Global Center, Beijing)</strong><br>
+                        <a href="https://gyda.online/case-dm-1.html" class="more-link" target="_blank">https://gyda.online/case-dm-1.html</a><br>
+                        Co-hosted by GYDA, UNITAR, and the Columbia Global Center | Beijing, with supporting partners including the Global Centre for Sustainable Development and Leadership Development, WAYS, the Eurasia Centre, and the FMCI Institute. The forum convened leaders in education, science, and development to explore new models for talent cultivation and foundational AI education.
+                      </p>
+                    
+                      <!-- Apr 2025 — Torch Group / AIDF NUS -->
+                      <p><strong>Apr 2025 — GYDA × Torch Group / AIDF NUS Partnership (Singapore)</strong><br>
+                        <a href="https://gyda.online/case-aidf.html" class="more-link" target="_blank">https://gyda.online/case-aidf.html</a><br>
+                        Torch Group is an official partner of the Asian Institute of Digital Finance (AIDF), a university-level institute at the National University of Singapore (NUS) jointly established by MAS, NRF, and NUS. Through Torch Group, GYDA gains access to expert dialogues and institutional networks that support frontier research and next-generation fintech.
+                      </p>
+                    
+                      <!-- May 2025 — Palace Museum at the UN -->
+                      <p><strong>May 2025 — The Palace Museum at the United Nations (New York)</strong><br>
+                        <a href="https://gyda.online/case-20505-fny.html" class="more-link" target="_blank">https://gyda.online/case-20505-fny.html</a><br>
+                        Co-hosted by the Palace Museum and the Permanent Mission of China to the UN, this centennial exhibition drew 120+ ambassadors and representatives from international organizations. As part of our mission to connect youth with global institutions, GYDA views cultural engagement as a vital channel for building understanding in a complex geopolitical landscape.
+                      </p>
+                    
+                      <!-- Early July 2025 — DEC40 -->
+                      <p><strong>Early July 2025 — Contributing Expertise to the Global Digital Economy Cities Alliance (DEC40) (Beijing)</strong><br>
+                        <a href="https://gyda.online/case-2507-bj.html" class="more-link" target="_blank">https://gyda.online/case-2507-bj.html</a><br>
+                        DEC40 is a multilateral platform dedicated to “empowering cities with digital technology and co-creating the future,” attracting stakeholders from international organizations, multinationals, and research institutions. 
+                      </p>
+                    <p>
+                        GYDA contributes by:
+                    </p>
+                      <ul>
+                        <li>Connecting emerging youth leaders with urban-innovation and public-policy agendas</li>
+                        <li>Delivering research and advisory on tech governance, regulatory agility, and inclusive design</li>
+                        <li>Facilitating pilot collaborations among city governments, academic labs, and the private sector</li>
+                      </ul>
+                    
+                      <!-- Jul 8, 2025 — ITU AI for Good -->
+                      <p><strong>Jul 8, 2025 — ITU “AI for Good” High-Level Meeting (Geneva)</strong><br>
+                        <a href="https://gyda.online/case-202507-itu.html" class="more-link" target="_blank">https://gyda.online/case-202507-itu.html</a><br>
+                        The forum convened ministers and senior policymakers from 40+ countries and institutions including UNESCO, UNIDO, and national regulatory agencies. GYDA’s participation advances our commitment to bring youth perspectives into multilateral dialogue, especially in fast-moving domains such as AI policy.
+                      </p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Upcoming Frontiers -->
+                    <div class="section">                 
+                    <h3 class="section-title">Upcoming Frontiers (Q3–Q4 2025)</h3>
+                    
+                    <!-- Sept 21–28, 2025 — Climate Week NYC -->
+                    <p>
+                    <strong>Sept 21–28, 2025 — Climate Week NYC (New York City; UNGA@80)</strong><br>
+                    Climate Week NYC is the largest annual climate event of its kind, featuring 600+ activities across New York City and convening leaders from government, business, academia, and civil society to accelerate climate action.<br>
+                    GYDA will actively respond by organizing an immersive programme to broaden youth awareness and participation, helping more emerging leaders engage with climate solutions at scale.
+                    </p>
+                    
+                    <!-- Oct 23–25, 2025 — UN 80 & UNU 50 -->
+                    <p>
+                    <strong>Oct 23–25, 2025 — UN 80 & UNU 50 Celebration Series (Macau SAR, China)</strong><br>
+                    <img src="unu.jpg" alt="UNU Celebration" style="max-width:100%; height:auto; margin:8px 0;"><br>
+                    In celebration of the UN’s 80th anniversary and the United Nations University’s 50th anniversary, UNU Macau will host a multi-day, three-pillar milestone series in Macau — elevating its annual AI Conference into a broader platform that includes the <em>UNU Macau AI Conference 2025</em> (Oct 24), <em>AI Education Day</em> (Oct 25), and the <em>AI for SDGs — Global Youth AI Future Innovation Competition</em>.<br>
+                    GYDA plans to co-host selected activities within the series; the organizers have confirmed preliminary intent to collaborate.<br>
+                    </p>
+                    
+                    
+                    
+                    <!-- Apr 13–Oct 13, 2025 — Osaka Expo -->
+                    <p>
+                    <strong>Apr 13–Oct 13, 2025 — Osaka Expo — ATSF Project (Japan)</strong><br>
+                    The 2025 World Expo will welcome 28 million+ visitors, showcasing innovation, cultural exchange, and cutting-edge technology.<br>
+                    GYDA will organize member participation in the ATSF project track to highlight cross-border collaboration and youth-driven solutions.
+                    </p>
+
+                    <!-- Nov 10–21, 2025 — COP30 -->
+                    <p>
+                    <strong>Nov 10–21, 2025 — COP30 (Belém, Brazil)</strong><br>
+                    COPs convene tens of thousands of participants across governments, international organizations, NGOs, academia, media, and business. COP30 will be the first to be hosted within the core ecological zone of a tropical rainforest, underscoring its strategic and historical significance for global climate governance.<br>
+                    GYDA plans to apply for a pavilion booth and organize a side event to amplify youth-led perspectives on climate solutions.
+                    </p>
+
+                    <!-- 2026 — DEC40 Phase II -->
+                    <p>
+                      <strong>2026 — DEC40 Phase II (Beijing Municipal Collaboration)</strong>
+                    </p>
+                    <ul>
+                      <li>
+                        Continued coordination with leading international organizations — including ITU, UNIDO, UN-Habitat, ITC, WHO, and UNCTAD — to advance joint workstreams in the digital economy and urban innovation.
+                      </li>
+                      <li>
+                        Expanded country engagement: during the Artificial Intelligence Summit, GYDA connected with ministers and directors-general from 30+ countries (e.g., Algeria, Cambodia, Thailand, France, Germany, South Africa, Cyprus, Egypt) and introduced the Digital Economy Capacity Building Project.
+                      </li>
+                      <li>
+                        Governance and delivery: Phase II will convene the first in-person Board Meeting in Beijing to set priorities, timelines, and partner commitments with municipal counterparts.
+                      </li>
+                    </ul>
+
+
+                    
+                    </div>
+
+
+                        
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="footer" style="background-color:#f8f9fa; padding:40px; font-size:14px; color:#333; line-height:1.6; border-top:1px solid #ddd;">
+  
+  <!-- Signature -->
+    <p>Warm Regards,</p>
+  <p style="margin:0; font-size:16px; font-weight:bold; color:#000;">Allan Han</p>
+  <p style="margin:0;">Managing Director</p>
+  <p style="margin:0; font-weight:bold;">Global Youth Development Alliance (GYDA)</p>
+  <p style="margin:0;">Address: 170 Haussmann, 75008 Paris, France</p>
+  <p style="margin:0;">
+    Website: <a href="http://www.gyda.online" style="color:#0056b3; text-decoration:none;">http://gyda.online</a>
+  </p>
+  <p style="margin:0;">
+    Tel: +65&nbsp;9427&nbsp;1410&nbsp;|&nbsp;+86&nbsp;185&nbsp;1177&nbsp;2208
+  </p>
+  <p style="margin:0;">
+    Email: allan.han@gyda.online
+  </p>
+
+</div>
+
+<!-- Privacy Notice -->
+<div style="background-color:#ffffff; padding:15px; font-size:12px; color:#555; font-style:italic; border-top:1px solid #eee;">
+  You are receiving this newsletter because we have been in contact in the past. 
+  If you prefer not to receive further updates, please reply with the word “unsubscribe”.
+</div>
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+"""
